@@ -1,0 +1,18 @@
+# RL outputs
+logs/
+videos/
+models/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Conda
+.env
+.venv
