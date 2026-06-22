@@ -6,9 +6,6 @@ models/
 __pycache__/
 *.pyc
 
-# Jupyter
-.ipynb_checkpoints/
-
 # VSCode
 .vscode/
 
@@ -16,10 +13,11 @@ __pycache__/
 .env
 .venv
 
-# Keep solved models only
-!models/
-!models/sac_normal/
-!models/sac_normal/solved.pt
+# RL outputs
+logs/
+videos/
 
-!models/sac_hardcore/
+# Ignore model files by default, but allow selected solved models
+models/**/*.pt
+!models/sac_normal/solved.pt
 !models/sac_hardcore/solved.pt
