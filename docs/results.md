@@ -61,7 +61,6 @@ Evaluation Results:
 
 #### Observations
 
-* The policy successfully exceeded the Hardcore solve threshold.
 * Most evaluation runs achieved returns between 305 and 317.
 * Several challenging seeds caused significant failures, increasing variance.
 * Despite these failures, the average return remained above the solve threshold.
