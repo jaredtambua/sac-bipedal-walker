@@ -4,8 +4,7 @@ import numpy as np
 import torch
 
 from src.sac import SAC
-
-device = torch.device("cpu")
+from src.device import device
 
 
 class Agent:
@@ -88,12 +87,6 @@ class Agent:
             next_observation, reward, terminated, truncated, info = self.env.step(
                 action
             )
-
-            # encourage forward velocity.
-            # In BipedalWalker, observation[2] is horizontal hull velocity.
-            forward_velocity = float(next_observation[2])
-            reward += 0.05 * forward_velocity
-
             # Clip large negative rewards for training stability.
             reward = max(reward, -5.0)
 

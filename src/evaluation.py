@@ -6,7 +6,7 @@ from src.envs import make_env
 
 def evaluate_agent(
     agent,
-    episodes=5,
+    episodes=100,
     seeds=None,
     hardcore=False,
     record_video=True,

@@ -47,7 +47,7 @@ def main():
     result = evaluate_agent(
         agent=agent,
         episodes=args.episodes,
-        seeds=[2000 + i for i in range(args.episodes)],
+        seeds=[4000 + i for i in range(args.episodes)],
         hardcore=args.hardcore,
         record_video=not args.no_video,
         video_folder=str(video_dir),

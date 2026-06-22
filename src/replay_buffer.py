@@ -3,7 +3,7 @@ import collections
 import numpy as np
 import torch
 
-device = torch.device("cpu")
+from src.device import device
 
 
 class ReplayBuffer:

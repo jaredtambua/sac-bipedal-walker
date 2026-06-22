@@ -1,6 +1,5 @@
 # RL outputs
 logs/
-videos/
 models/
 
 # Python
@@ -16,3 +15,11 @@ __pycache__/
 # Conda
 .env
 .venv
+
+# Keep solved models only
+!models/
+!models/sac_normal/
+!models/sac_normal/solved.pt
+
+!models/sac_hardcore/
+!models/sac_hardcore/solved.pt
